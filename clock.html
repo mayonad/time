@@ -14,6 +14,14 @@ ctx.translate(radius, radius);
 radius = radius * 0.90
 setInterval(drawClock, 1000);
 
+function centerImage() {
+  var canvas = document.getElementById("canvas");
+  canvas.style.position = "absolute";
+  canvas.style.top = 20;
+  canvas.style.left = 20;
+
+}
+
 function drawClock() {
   drawFace(ctx, radius);
   drawNumbers(ctx, radius);
